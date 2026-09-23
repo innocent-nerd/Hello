@@ -760,6 +760,29 @@ code.blk{display:block;background:#060b12;border:1px solid var(--ln);border-radi
 .scan{position:absolute;inset:0;pointer-events:none;overflow:hidden}
 .scan:after{content:'';position:absolute;top:0;bottom:0;width:34%;background:linear-gradient(90deg,transparent,rgba(34,211,238,.07),transparent);animation:sweep 5.5s linear infinite}
 @media (max-width:1100px){.side{width:62px}.side .lbl,.side .navsec{display:none}.kan{grid-template-columns:1fr 1fr}}
+@media (max-width:900px){
+  .app{height:auto;min-height:100vh;flex-direction:column;overflow:auto}
+  .side{width:100%;border-right:0;border-bottom:1px solid var(--ln);flex-direction:row;align-items:center;gap:6px;padding:8px;overflow-x:auto;overflow-y:hidden}
+  .logo{padding:4px 6px;flex:none}
+  .logo .lbl{display:none}
+  .side .navsec{display:none}
+  .side .navbtn{width:auto;flex:none;padding:7px 9px}
+  .side .navbtn .lbl{display:none}
+  .side>div[style*="margin-top: auto"]{display:none}
+  .top{height:auto;padding:10px 12px;align-items:flex-start;flex-wrap:wrap}
+  .body{padding:12px}
+  .drawer{width:100vw;max-width:100vw}
+  .kv,.hop{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr !important}
+  .kan{grid-template-columns:1fr !important}
+  table{display:block;width:100%;overflow-x:auto;white-space:nowrap}
+}
+@media (max-width:560px){
+  .top{padding:9px 10px}
+  .body{padding:10px}
+  .panel{border-radius:10px}
+  .ph,.pb,.kpi{padding:10px}
+}
 `;
 
 /* ── primitives ──────────────────────────────────────────────────────────── */
